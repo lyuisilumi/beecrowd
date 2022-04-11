@@ -1,14 +1,13 @@
 #include <stdio.h>
-#include <math.h>
-
-#define pi 3.14159 
-
+ 
 int main() { 
-    double raio, volume;
+    int cod1, cod2, n1, n2;
+    float valor1, valor2, total;
 
-    scanf("%lf", &raio);
-    volume = (4.0 / 3) * pi * pow(raio, 3.0);
-    printf("VOLUME = %.3f\n", volume);
+    scanf("%d %d %f", &cod1, &n1, &valor1);
+    scanf("%d %d %f", &cod2, &n2, &valor2);
+    total = (n1 * valor1) + (n2 * valor2);
+    printf("VALOR A PAGAR: R$ %.2f\n", total);
 
     return 0;
 }
